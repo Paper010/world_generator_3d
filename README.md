@@ -4,3 +4,6 @@ https://github.com/TanTanDev/breakout_tutorial
 
 Mine lacks a lot of things, beacuse i simply wanted to get the main parts of the game done and learn about the library.
 And yes, i had to copy the math part because i didnt understand it very well.
+
+## Updates
+I might eventually update it here and there and fix the bad code. I wont do anything about it for a while.
