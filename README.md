@@ -1,9 +1,5 @@
-# macroquad_arkaniod
-A simple arakanoid/breakout game made in marcoquad. I made this by watching TanTan's tutorial on making one, then tried to make it by myself. If you want to original one:
-https://github.com/TanTanDev/breakout_tutorial
-
-Mine lacks a lot of things, beacuse i simply wanted to get the main parts of the game done and learn about the library.
-And yes, i had to copy the math part because i didnt understand it very well.
-
-## Updates
-I might eventually update it here and there and fix the bad code. I wont do anything about it for a while.
+# 3d_world_generator
+Made this for fun and just experimenting with the [macroquad]() and [world_gen]() framework.
+This can probably be improved in a million different ways, and I'll leave that up to you :troll:
+Yeah use it if you want for some reason.
+A lot of this code is boiler-plate because I wanted to try stuff out.

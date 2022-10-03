@@ -1,5 +1,5 @@
 [package]
-name = "pro"
+name = "3d_world_generator"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,9 +7,9 @@ edition = "2021"
 
 [dependencies]
 macroquad = "0.3"
-rapier2d = {version="0.10" , features=["simd-stable"]}
 rand = "0.7"
+worldgen = " 0.5.3"
 
 [[bin]]
-name = "pro"
+name = "3d_world_generator"
 target = "src/main.rs"
