@@ -1,0 +1,10 @@
+c:\Users\ST Aloysius\Desktop\projects\rust\macroquad_arkaniod\target\debug\deps\crc32fast-d9a4ea5fe4c8e2aa.rmeta: C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\lib.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\baseline.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\combine.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\specialized\mod.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\table.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\specialized\pclmulqdq.rs
+
+c:\Users\ST Aloysius\Desktop\projects\rust\macroquad_arkaniod\target\debug\deps\crc32fast-d9a4ea5fe4c8e2aa.d: C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\lib.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\baseline.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\combine.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\specialized\mod.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\table.rs C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\specialized\pclmulqdq.rs
+
+C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\lib.rs:
+C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\baseline.rs:
+C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\combine.rs:
+C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\specialized\mod.rs:
+C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\table.rs:
+C:\Users\ST\ Aloysius\.cargo\registry\src\github.com-1ecc6299db9ec823\crc32fast-1.3.2\src\specialized\pclmulqdq.rs:

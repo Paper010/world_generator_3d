@@ -12,21 +12,18 @@ use worldgen::noisemap::{NoiseMapGenerator, NoiseMapGeneratorBase, NoiseMap, See
 use worldgen::world::{World, Tile};
 use worldgen::world::tile::{Constraint, ConstraintType};
 
-
-
-#[macroquad::main("3D")]
-async fn main() {
-    let noise = PerlinNoise::new();
+fn create_chunck(s1: &str, s2: &str)-> String {
     let mut string:String = String::from("");
+    let noise = PerlinNoise::new();
 
    
-
+    
     let nm1 = NoiseMap::new(noise)
-        .set(Seed::of("Hello?"))
+        .set(Seed::of(s1))
         .set(Step::of(0.005, 0.005));
 
     let nm2 = NoiseMap::new(noise)
-        .set(Seed::of("Hello!"))
+        .set(Seed::of(s2))
         .set(Step::of(0.05, 0.05));
 
     let nm = Box::new(nm1 + nm2 * 3);
@@ -60,6 +57,52 @@ async fn main() {
 
         string += "\n";
     }
+    string
+}
+
+fn draw_chunck(string:&String,x:f32) {
+    let mut z:f32 = 0.0;
+    for line in string.lines() {
+        z += 1f32;
+        let mut x = x;
+         for char in line.chars() {
+            x += 1f32;
+            let mut y:f32=0f32;
+            /* 
+                ~ = y-1
+                , = y
+                n = y+1
+                ^ = y+2 
+            */  
+            if char == 'n' {
+                y = 2f32;
+            }else if char ==',' {
+                y = 1f32;
+            }else if char == '~'{
+                y = -1f32;
+            }else if char == ','{
+                y = 0f32;
+            };
+
+            //draw_cube_wires(vec3(x, y, z), vec3(2., 2., 2.),WHITE);
+            
+            if y <= -1f32 {
+            draw_cube(vec3(x, y, z), vec3(2., 2., 2.),None,BLUE);
+            }
+            if y == 1f32 || y == 0f32{ 
+            draw_cube(vec3(x, y, z), vec3(2., 2., 2.),None,GREEN);
+            }
+            if y >=2f32 {
+             draw_cube(vec3(x, y, z), vec3(2., 2., 2.),None,BLACK);
+            } 
+        }
+    };
+}
+
+#[macroquad::main("3D")]
+async fn main() {
+    let string = create_chunck("Hello","World");
+    let string2 = create_chunck("Goodbye", "World");
 
     let mut x = 0.0;
     let mut switch = false;
@@ -145,43 +188,10 @@ async fn main() {
         });
 
         clear_background(SKYBLUE);
-      
+        draw_chunck(&string, 0f32);
+        draw_chunck(&string2, 80f32);
         
-        for line in string.lines() {
-            z += 1f32;
-            let mut x:f32 = 1f32;
-             for char in line.chars() {
-                x += 1f32;
-                let mut y:f32=0f32;
-                /* 
-                    ~ = y-1
-                    , = y
-                    n = y+1
-                    ^ = y+2 
-                */  
-                if char == 'n' {
-                    y = 2f32;
-                }else if char ==',' {
-                    y = 1f32;
-                }else if char == '~'{
-                    y = -1f32;
-                }else if char == ','{
-                    y = 0f32;
-                };
-    
-                //draw_cube_wires(vec3(x, y, z), vec3(2., 2., 2.),WHITE);
-                
-                if y <= -1f32 {
-                draw_cube(vec3(x, y, z), vec3(2., 2., 2.),None,BLUE);
-                }
-                if y == 1f32 || y == 0f32{ 
-                draw_cube(vec3(x, y, z), vec3(2., 2., 2.),None,GREEN);
-                }
-                if y >=2f32 {
-                 draw_cube(vec3(x, y, z), vec3(2., 2., 2.),None,BLACK);
-                } 
-            }
-        };
+        
         
     
         set_default_camera();

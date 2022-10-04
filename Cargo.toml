@@ -1,5 +1,5 @@
 [package]
-name = "3d_world_generator"
+name = "world_generator_3d"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,5 +11,5 @@ rand = "0.7"
 worldgen = " 0.5.3"
 
 [[bin]]
-name = "3d_world_generator"
+name = "world_generator_3d"
 target = "src/main.rs"
